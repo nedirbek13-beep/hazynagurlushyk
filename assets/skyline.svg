@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.55">
+  <!-- wireframe city skyline, line-art style -->
+  <g opacity="0.5">
+    <path d="M-20 420V300h70v120M8 300v-36h34v36M18 264v-20"/>
+    <path d="M90 420V330h56v90M104 330v-24h28v24"/>
+    <path d="M470 420V310h64v110M486 310v-30h32v30"/>
+    <path d="M960 420V300h58v120M974 300v-26h30v26"/>
+    <path d="M1450 420V320h62v100M1464 320v-28h32v28"/>
+  </g>
+  <!-- tall tower left -->
+  <path d="M170 420V180h84v240M182 180v-24h60v24M194 156v-26h36v26M206 130v-30"/>
+  <path d="M182 210h60M182 240h60M182 270h60M182 300h60M182 330h60M182 360h60M182 390h60"/>
+  <!-- slab building -->
+  <path d="M280 420V260h110v160M296 260v-34h78v34"/>
+  <path d="M296 290h78M296 318h78M296 346h78M296 374h78"/>
+  <path d="M312 290v130M330 290v130M348 290v130"/>
+  <!-- rounded-top tower -->
+  <path d="M420 420V250q0-36 34-36t34 36v170"/>
+  <path d="M432 262h44M432 292h44M432 322h44M432 352h44M432 382h44"/>
+  <!-- lattice TV tower -->
+  <path d="M596 420l28-190h24l28 190"/>
+  <path d="M604 368h96M612 316h80M620 264h64M628 230h48"/>
+  <path d="M604 368l88-52M700 368l-88-52M612 316l72-52M692 316l-72-52M620 264l56-34M684 264l-56-34"/>
+  <path d="M632 230l16-84h8l16 84M648 146v-40M640 118h16"/>
+  <!-- wide podium -->
+  <path d="M720 420V330h150v90M736 330v-26h118v26"/>
+  <path d="M742 356h106M742 382h106M760 330v90M786 330v90M812 330v90M838 330v90"/>
+  <!-- glass highrise -->
+  <path d="M900 420V170h96v250"/>
+  <path d="M900 200h96M900 230h96M900 260h96M900 290h96M900 320h96M900 350h96M900 380h96"/>
+  <path d="M924 170h48v-26h-48zM940 144v-24"/>
+  <!-- pyramid-top tower -->
+  <path d="M1030 420V270h84v150M1030 270l42-44 42 44"/>
+  <path d="M1044 300h56M1044 330h56M1044 360h56M1044 390h56"/>
+  <!-- stepped block -->
+  <path d="M1140 420V310h58v-40h58v40h30v110"/>
+  <path d="M1154 340h116M1154 370h116M1154 398h116"/>
+  <!-- twin towers -->
+  <path d="M1310 420V240h52v180M1374 420V240h52v180M1310 268h52M1374 268h52M1310 298h52M1374 298h52M1310 328h52M1374 328h52M1310 358h52M1374 358h52M1310 388h52M1374 388h52"/>
+  <path d="M1330 240v-22h12v22M1394 240v-22h12v22"/>
+  <!-- far right -->
+  <path d="M1500 420V290h76v130M1516 290v-24h44v24M1516 320h44M1516 350h44M1516 380h44"/>
+  <!-- baseline -->
+  <path d="M-20 420h1640" stroke-width="3"/>
+</svg>

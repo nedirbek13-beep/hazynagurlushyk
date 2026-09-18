@@ -1,84 +1,77 @@
 <!DOCTYPE html>
-<html lang="tk">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>«Hazyna Gurluşyk» — Türkmenistanda gurluşyk kompaniýasy</title>
-  <meta name="description" content="«Hazyna Gurluşyk» — ýaşaýyş jaýlaryndan senagat desgalaryna çenli gurluşygyň ähli tapgyrlaryny öz üstüne alýan kompaniýa. Aşgabat, Türkmenistan.">
-  <meta name="theme-color" content="#0a1120">
+  <title data-ru="«Хазына Гурлушык» — строительная компания, Туркменистан">Hazyna Gurluşyk — Construction company in Turkmenistan</title>
+  <meta name="description"
+        content="Hazyna Gurluşyk Economic Society — construction, power and water-supply projects across Turkmenistan since 2009. 27+ completed projects, 115+ specialists."
+        data-ru="ХО «Хазына Гурлушык» — строительство, энергетика и водоснабжение по всему Туркменистану с 2009 года. 27+ завершённых проектов, 115+ специалистов.">
+  <meta name="theme-color" content="#1772CE">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="«Hazyna Gurluşyk» — Türkmenistanda gurluşyk kompaniýasy">
-  <meta property="og:description" content="Berk binýat — ynamly geljek. Taslamadan açar gowşurylýança gurluşygyň ähli tapgyrlary.">
+  <meta property="og:title" content="Hazyna Gurluşyk — Construction company in Turkmenistan">
+  <meta property="og:description" content="Experience of time. Construction, power and water-supply projects across Turkmenistan since 2009.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- ============ TOP BAR ============ -->
-  <div class="topbar">
-    <div class="container topbar-in">
-      <div class="topbar-side">
-        <a class="top-item" href="tel:+99312456789">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
-          <span>+993 12 45-67-89</span>
-        </a>
-        <a class="top-item" href="mailto:info@hazyna.com.tm">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 5.5h17v13h-17z"/><path d="M4 6.5l8 6 8-6"/></svg>
-          <span>info@hazyna.com.tm</span>
-        </a>
+  <!-- ============ INTRO: logo draws itself in, then dissolves ============ -->
+  <div id="intro" role="presentation">
+    <div class="intro-stage">
+      <div class="intro-logo">
+        <svg viewBox="0 0 190 324" aria-hidden="true">
+          <g class="sketch">
+            <path class="stroke draw-hex" d="M95 4L182 54V272L95 322L8 272V54Z"
+                  pathLength="1" stroke="#FFFFFF" stroke-width="7"/>
+            <path class="stroke draw-a" d="M39 76V250M39 172H85"
+                  pathLength="1" stroke="#8FCBFA" stroke-width="13"/>
+            <path class="stroke draw-b" d="M123 66H85V260H123V202M123 156H104"
+                  pathLength="1" stroke="#FFFFFF" stroke-width="13"/>
+            <path class="stroke draw-c" d="M152 76V250M124 172H152M124 172V250"
+                  pathLength="1" stroke="#8FCBFA" stroke-width="13"/>
+          </g>
+          <image class="intro-raster" href="assets/img/logo-mark.png" x="0" y="0" width="190" height="324"/>
+        </svg>
       </div>
-      <div class="topbar-side">
-        <span class="top-item">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
-          <span data-i18n="top.addr">Aşgabat ş., Arçabil şaýoly 17</span>
-        </span>
-        <span class="top-item">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
-          <span data-i18n="top.hours">Duşenbe – Şenbe: 09:00 – 18:00</span>
-        </span>
+      <div class="intro-word">
+        <b>HAZYNA GURLUŞYK</b>
+        <i>ECONOMIC SOCIETY</i>
       </div>
     </div>
+    <button class="intro-skip" type="button" data-ru="Пропустить">Skip</button>
   </div>
 
   <!-- ============ HEADER ============ -->
   <header class="header" id="header">
     <div class="container header-in">
-      <a class="brand" href="#home" aria-label="Hazyna Gurluşyk">
-        <svg class="brand-gem" viewBox="0 0 44 40" aria-hidden="true">
-          <polygon points="15,4 29,4 22,14" fill="#F0D27A"/>
-          <polygon points="6,14 15,4 22,14" fill="#DFB44A"/>
-          <polygon points="29,4 38,14 22,14" fill="#C79A29"/>
-          <polygon points="6,14 22,14 22,36" fill="#B08217"/>
-          <polygon points="22,14 38,14 22,36" fill="#D9AE3E"/>
-        </svg>
+      <a class="brand" href="index.html" aria-label="Hazyna Gurluşyk — Home">
+        <img class="brand-logo" src="assets/img/logo-tile.png" alt="Hazyna Gurluşyk logo">
         <span class="brand-text">
-          <b>HAZYNA</b>
-          <i>GURLUŞYK</i>
+          <b>HAZYNA GURLUŞYK</b>
+          <i data-ru="ХОЗЯЙСТВЕННОЕ ОБЩЕСТВО">ECONOMIC SOCIETY</i>
         </span>
       </a>
-
-      <nav class="nav" id="nav" aria-label="Esasy nawigasiýa">
-        <a href="#home" class="nav-link is-active" data-link="home" data-i18n="nav.home">Baş sahypa</a>
-        <a href="#about" class="nav-link" data-link="about" data-i18n="nav.about">Biz barada</a>
-        <a href="#services" class="nav-link" data-link="services" data-i18n="nav.services">Hyzmatlar</a>
-        <a href="#projects" class="nav-link" data-link="projects" data-i18n="nav.projects">Taslamalar</a>
-        <a href="#contact" class="nav-link" data-link="contact" data-i18n="nav.contact">Habarlaşmak</a>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link" aria-current="page" data-ru="Главная">Home</a>
+        <a href="about.html" class="nav-link" data-ru="О компании">About us</a>
+        <a href="services.html" class="nav-link" data-ru="Услуги">Services</a>
+        <a href="projects.html" class="nav-link" data-ru="Проекты">Projects</a>
+        <a href="contact.html" class="nav-link" data-ru="Контакты">Contact</a>
         <div class="nav-mobile-extra">
-          <a href="#contact" class="btn btn-gold" data-i18n="nav.cta">Teklip almak</a>
+          <a href="contact.html" class="btn btn-blue" data-ru="Связаться с нами">Get in touch</a>
         </div>
       </nav>
-
       <div class="header-actions">
-        <div class="lang" role="group" aria-label="Dil saýlamak">
-          <button class="lang-btn is-active" data-lang="tm" type="button">TM</button>
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang-btn is-active" data-lang="en" type="button">EN</button>
           <button class="lang-btn" data-lang="ru" type="button">RU</button>
-          <button class="lang-btn" data-lang="en" type="button">EN</button>
         </div>
-        <a href="#contact" class="btn btn-gold btn-sm header-cta" data-i18n="nav.cta">Teklip almak</a>
-        <button class="burger" id="burger" type="button" aria-label="Menýu" aria-expanded="false">
+        <a href="contact.html" class="btn btn-blue btn-sm header-cta" data-ru="Связаться">Get in touch</a>
+        <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -87,93 +80,32 @@
 
   <main>
     <!-- ============ HERO ============ -->
-    <section class="hero" id="home">
+    <section class="hero">
       <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-sky" aria-hidden="true"></div>
       <div class="container hero-in">
-        <p class="hero-kicker reveal">
-          <span class="dot" aria-hidden="true"></span>
-          <span data-i18n="hero.kicker">Türkmenistanda ynamdar gurluşyk kompaniýasy</span>
-        </p>
-        <h1 class="hero-title reveal" data-i18n="hero.title">Berk binýat — <span class="grad">ynamly geljek</span></h1>
-        <p class="hero-sub reveal" data-i18n="hero.sub">«Hazyna Gurluşyk» — ýaşaýyş jaýlaryndan senagat desgalaryna çenli gurluşygyň ähli tapgyrlaryny öz üstüne alýan kompaniýa. Taslamadan açar gowşurylýança — jogapkärçilik bizde.</p>
-        <div class="hero-cta reveal">
-          <a href="#services" class="btn btn-gold btn-lg" data-i18n="hero.b1">Hyzmatlarymyz</a>
-          <a href="#contact" class="btn btn-ghost btn-lg" data-i18n="hero.b2">Mugt maslahat</a>
+        <div class="hero-copy">
+          <p class="hero-tagline reveal"><span class="dot" aria-hidden="true"></span><span data-ru="Опыт времени">Experience of time</span></p>
+          <h1 class="hero-title reveal"
+              data-ru="Здания, электросети и системы водоснабжения — <span class='lt'>построено надолго</span>">
+            Buildings, power grids and water systems — <span class="lt">built to last</span>
+          </h1>
+          <p class="hero-sub reveal"
+             data-ru="ХО «Хазына Гурлушык» — туркменская строительная компания, работающая с 2009 года: административные здания и заводы, подстанции 35/10 кВ, магистральные водоводы и автодороги — под ключ.">
+            Hazyna Gurluşyk is a Turkmen construction company delivering turnkey projects since 2009 —
+            administrative buildings and factories, 35/10 kV substations, water mains and highways.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="projects.html" class="btn btn-white btn-lg" data-ru="Наши проекты">Our projects</a>
+            <a href="contact.html" class="btn btn-ghost-light btn-lg" data-ru="Связаться с нами">Get in touch</a>
+          </div>
         </div>
-      </div>
-
-      <div class="hero-sky" aria-hidden="true">
-        <svg viewBox="0 0 1440 340" preserveAspectRatio="xMidYMax slice">
-          <defs>
-            <pattern id="hw1" width="18" height="24" patternUnits="userSpaceOnUse">
-              <rect x="4" y="6" width="7" height="11" fill="rgba(233,201,102,0.13)"/>
-            </pattern>
-            <pattern id="hw2" width="36" height="48" patternUnits="userSpaceOnUse">
-              <rect x="6" y="8" width="7" height="11" fill="rgba(240,210,122,0.33)"/>
-            </pattern>
-            <g id="crane">
-              <path d="M90 40l-5 28h10z" fill="#0c1526"/>
-              <rect x="86" y="66" width="190" height="6" fill="#0c1526"/>
-              <rect x="28" y="66" width="58" height="6" fill="#0c1526"/>
-              <rect x="26" y="72" width="20" height="13" fill="#0c1526"/>
-              <path d="M90 44L272 66M90 44L32 66" stroke="#0c1526" stroke-width="2" fill="none"/>
-              <rect x="238" y="72" width="10" height="7" fill="#0c1526"/>
-              <rect x="242" y="79" width="2.5" height="44" fill="#0c1526"/>
-              <path d="M239 123h9v5h-9z" fill="#0c1526"/>
-              <rect x="85" y="70" width="9" height="240" fill="#0c1526"/>
-              <path d="M85 92l9 14M94 92l-9 14M85 120l9 14M94 120l-9 14M85 148l9 14M94 148l-9 14M85 176l9 14M94 176l-9 14M85 204l9 14M94 204l-9 14M85 232l9 14M94 232l-9 14M85 260l9 14M94 260l-9 14" stroke="#182642" stroke-width="1.4"/>
-              <rect x="78" y="306" width="23" height="10" fill="#0c1526"/>
-              <circle class="blink" cx="90" cy="36" r="3.2" fill="#E9C966"/>
-            </g>
-          </defs>
-
-          <!-- back row -->
-          <g fill="#131f38" opacity="0.55">
-            <rect x="-10" y="150" width="90" height="190"/>
-            <rect x="120" y="180" width="70" height="160"/>
-            <rect x="230" y="120" width="80" height="220"/>
-            <rect x="360" y="200" width="110" height="140"/>
-            <rect x="500" y="140" width="66" height="200"/>
-            <rect x="600" y="170" width="90" height="170"/>
-            <rect x="760" y="130" width="72" height="210"/>
-            <rect x="870" y="185" width="100" height="155"/>
-            <rect x="1010" y="140" width="64" height="200"/>
-            <rect x="1120" y="175" width="90" height="165"/>
-            <rect x="1260" y="120" width="80" height="220"/>
-            <rect x="1380" y="165" width="80" height="175"/>
-            <path d="M270 120l0 -22M296 120l0 -14M1300 120l0 -20" stroke="#131f38" stroke-width="3"/>
-          </g>
-
-          <!-- front row -->
-          <g>
-            <rect x="40" y="210" width="120" height="130" fill="#0a1120"/>
-            <rect x="40" y="210" width="120" height="130" fill="url(#hw1)"/>
-            <rect x="200" y="160" width="88" height="180" fill="#0a1120"/>
-            <rect x="200" y="160" width="88" height="180" fill="url(#hw2)"/>
-            <rect x="320" y="235" width="150" height="105" fill="#0a1120"/>
-            <rect x="320" y="235" width="150" height="105" fill="url(#hw1)"/>
-            <rect x="540" y="185" width="96" height="155" fill="#0a1120"/>
-            <rect x="540" y="185" width="96" height="155" fill="url(#hw1)"/>
-            <rect x="676" y="225" width="140" height="115" fill="#0a1120"/>
-            <rect x="676" y="225" width="140" height="115" fill="url(#hw2)"/>
-            <rect x="856" y="170" width="84" height="170" fill="#0a1120"/>
-            <rect x="856" y="170" width="84" height="170" fill="url(#hw1)"/>
-            <rect x="980" y="230" width="150" height="110" fill="#0a1120"/>
-            <rect x="980" y="230" width="150" height="110" fill="url(#hw1)"/>
-            <rect x="1170" y="150" width="92" height="190" fill="#0a1120"/>
-            <rect x="1170" y="150" width="92" height="190" fill="url(#hw2)"/>
-            <rect x="1296" y="215" width="160" height="125" fill="#0a1120"/>
-            <rect x="1296" y="215" width="160" height="125" fill="url(#hw1)"/>
-            <path d="M244 160v-26M1216 150v-24M898 170v-18" stroke="#0a1120" stroke-width="3.5"/>
-            <circle class="blink d2" cx="244" cy="130" r="2.6" fill="#E9C966"/>
-            <circle class="blink d3" cx="1216" cy="122" r="2.6" fill="#E9C966"/>
-          </g>
-
-          <use href="#crane" transform="translate(310,0)"/>
-          <use href="#crane" transform="translate(1440,0) scale(-1,1) translate(160,6)"/>
-
-          <rect x="0" y="332" width="1440" height="8" fill="#0a1120"/>
-        </svg>
+        <div class="hero-emblem reveal" aria-hidden="true">
+          <span class="ring"></span>
+          <span class="ring r2"></span>
+          <img src="assets/img/logo-tile.png" alt="">
+          <span class="est" data-ru="ОСНОВАНА В 2009">SINCE 2009</span>
+        </div>
       </div>
     </section>
 
@@ -182,478 +114,242 @@
       <div class="container">
         <div class="stats reveal">
           <div class="stat">
+            <div class="stat-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M6 21V8l7-4v17M13 9l5 2v10M8.5 9.5h2M8.5 13h2M8.5 16.5h2"/></svg></div>
             <div class="stat-num"><span class="num" data-count="15">0</span><span class="stat-plus">+</span></div>
-            <div class="stat-label" data-i18n="stats.s1">ýyl tejribe</div>
+            <div class="stat-label" data-ru="лет опыта в строительстве">years of experience</div>
           </div>
           <div class="stat">
-            <div class="stat-num"><span class="num" data-count="120">0</span><span class="stat-plus">+</span></div>
-            <div class="stat-label" data-i18n="stats.s2">tamamlanan taslama</div>
+            <div class="stat-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M7.5 12.5l3 3 6-6.5"/></svg></div>
+            <div class="stat-num"><span class="num" data-count="27">0</span><span class="stat-plus">+</span></div>
+            <div class="stat-label" data-ru="завершённых проектов">completed projects</div>
           </div>
           <div class="stat">
-            <div class="stat-num"><span class="num" data-count="450">0</span><span class="stat-plus">+</span></div>
-            <div class="stat-label" data-i18n="stats.s3">hünärmen işgär</div>
+            <div class="stat-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 17h13M2.5 17V8h9l4 4v5M15.5 17h6v-3l-2.5-2h-3.5M5 20a1.8 1.8 0 1 0 0-3.6A1.8 1.8 0 0 0 5 20zM17.5 20a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6z"/></svg></div>
+            <div class="stat-num"><span class="num" data-count="100">0</span><span class="stat-plus">+</span></div>
+            <div class="stat-label" data-ru="единиц техники и оборудования">machinery &amp; equipment units</div>
           </div>
           <div class="stat">
-            <div class="stat-num"><span class="num" data-count="250000">0</span></div>
-            <div class="stat-label" data-i18n="stats.s4">m² gurlan meýdan</div>
+            <div class="stat-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 11a7.5 7.5 0 0 1 15 0M3 11h18M12 3.5V6M12 14.5a3 3 0 0 0-3 3V20h6v-2.5a3 3 0 0 0-3-3z"/></svg></div>
+            <div class="stat-num"><span class="num" data-count="115">0</span><span class="stat-plus">+</span></div>
+            <div class="stat-label" data-ru="специалистов в команде">specialists in the team</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ============ ABOUT ============ -->
-    <section id="about" class="section">
-      <div class="container about-grid">
-        <div class="about-media reveal">
-          <div class="about-panel">
-            <svg class="about-gem" viewBox="0 0 44 40" aria-hidden="true">
-              <polygon points="15,4 29,4 22,14" fill="#F0D27A"/>
-              <polygon points="6,14 15,4 22,14" fill="#DFB44A"/>
-              <polygon points="29,4 38,14 22,14" fill="#C79A29"/>
-              <polygon points="6,14 22,14 22,36" fill="#B08217"/>
-              <polygon points="22,14 38,14 22,36" fill="#D9AE3E"/>
-            </svg>
-            <div class="about-year" data-i18n="about.since">2009-njy ýyldan bäri</div>
-            <svg class="about-sky" viewBox="0 0 480 120" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-              <g fill="#13203a">
-                <rect x="0" y="58" width="60" height="62"/>
-                <rect x="72" y="30" width="46" height="90"/>
-                <rect x="130" y="70" width="76" height="50"/>
-                <rect x="218" y="20" width="52" height="100"/>
-                <rect x="282" y="62" width="66" height="58"/>
-                <rect x="360" y="38" width="44" height="82"/>
-                <rect x="416" y="66" width="64" height="54"/>
-                <path d="M244 20v-14" stroke="#13203a" stroke-width="3"/>
-              </g>
-              <g fill="rgba(233,201,102,0.35)">
-                <rect x="82" y="40" width="6" height="8"/><rect x="98" y="58" width="6" height="8"/>
-                <rect x="228" y="32" width="6" height="8"/><rect x="248" y="50" width="6" height="8"/>
-                <rect x="232" y="72" width="6" height="8"/><rect x="370" y="50" width="6" height="8"/>
-                <rect x="386" y="72" width="6" height="8"/><rect x="12" y="70" width="6" height="8"/>
-              </g>
-              <circle class="blink" cx="244" cy="4" r="2.6" fill="#E9C966"/>
-            </svg>
-          </div>
-          <div class="about-badge">
-            <b>15+</b>
-            <span data-i18n="about.badge">ýyl tejribe</span>
-          </div>
+    <!-- ============ ABOUT TEASER ============ -->
+    <section class="section">
+      <div class="container split">
+        <div class="frame reveal">
+          <img src="assets/img/office-building.jpg" alt="Hazyna Gurluşyk administrative building in Ashgabat" loading="lazy">
         </div>
-
-        <div class="about-copy">
-          <p class="kicker reveal" data-i18n="about.kicker">Biz barada</p>
-          <h2 class="h2 reveal" data-i18n="about.title">Her taslama — biziň üçin hazyna</h2>
-          <p class="text reveal" data-i18n="about.p1">2009-njy ýylda Aşgabatda esaslandyrylan «Hazyna Gurluşyk» şu gün Türkmenistanyň öňdebaryjy gurluşyk kompaniýalarynyň biridir. Biz ýaşaýyş jaýlaryny, söwda we senagat desgalaryny taslaýarys, gurýarys hem-de ulanmaga doly taýýar görnüşde tabşyrýarys.</p>
-          <p class="text reveal" data-i18n="about.p2">Öz tehnika parkymyz, tejribeli inžener-tehniki işgärlerimiz we berk hil gözegçilik ulgamymyz her taslamany bellenen möhletde we ýokary hilde tamamlamaga mümkinçilik berýär.</p>
+        <div>
+          <p class="kicker reveal" data-ru="О компании">About us</p>
+          <h2 class="h2 reveal" data-ru="Опыт времени">Experience of time</h2>
+          <p class="text reveal"
+             data-ru="Хозяйственное общество «Хазына Гурлушык» основано 14 сентября 2009 года. Созданная в рамках Национальной программы по преобразованию социально-бытовых условий населения, компания накопила уникальный опыт в строительстве, электроэнергетике и водоснабжении.">
+            Hazyna Gurluşyk Economic Society was founded on 14 September 2009. Created on the basis of the
+            National Program to transform the social and living conditions of the population, the company has
+            gained deep experience in construction, electricity and water supply.
+          </p>
+          <p class="text reveal"
+             data-ru="Наша цель — экономическое превосходство и новые рабочие места для граждан Туркменистана. Компания работает на принципах хозяйственного расчёта, саморазвития и самофинансирования.">
+            Our goal is to achieve economic excellence and create new employment opportunities for the citizens
+            of Turkmenistan. The company operates on the principles of economic accounting, self-development
+            and self-financing.
+          </p>
           <ul class="checks reveal">
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
-              <span data-i18n="about.c1">Halkara standartlaryna laýyk hil gözegçiligi</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
-              <span data-i18n="about.c2">Öz tehnika we enjamlar parky</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
-              <span data-i18n="about.c3">Tejribeli inžener-tehniki topar</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
-              <span data-i18n="about.c4">Ähli işlere resmi kepillik</span>
-            </li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-ru="Государственные лицензии на строительство, энергетику и торговлю">State licenses for construction, energy and trade</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-ru="Собственный парк техники — более 100 единиц">Own fleet of more than 100 machinery units</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-ru="Опыт сотрудничества с «Sinopec» в нефтегазовой отрасли">Collaboration experience with Sinopec in oil &amp; gas</span></li>
           </ul>
+          <div style="margin-top: 26px;" class="reveal">
+            <a href="about.html" class="btn btn-blue" data-ru="Подробнее о нас">More about us
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============ SERVICES ============ -->
-    <section id="services" class="section section-soft">
+    <section class="section section-soft">
       <div class="container">
-        <div class="section-head">
-          <p class="kicker reveal" data-i18n="services.kicker">Hyzmatlarymyz</p>
-          <h2 class="h2 reveal" data-i18n="services.title">Hödürleýän hyzmatlarymyz</h2>
-          <p class="lead reveal" data-i18n="services.sub">Kiçi abatlaýyşdan iri senagat toplumlaryna çenli — islendik çylşyrymlylykdaky taslamalary ýerine ýetirýäris.</p>
+        <div class="section-head center">
+          <p class="kicker reveal" data-ru="Направления">What we do</p>
+          <h2 class="h2 reveal" data-ru="Наши услуги">Our services</h2>
+          <p class="lead reveal" data-ru="Полный цикл — от проектирования и строительно-монтажных работ до сдачи государственной комиссии.">
+            Full cycle — from design and construction to state-commission handover.
+          </p>
         </div>
         <div class="cards-grid stagger">
           <article class="s-card reveal">
-            <div class="s-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V10l4-3 4 3v11M15 21V8h4v13M7.6 13h1.6M7.6 16.5h1.6M16.4 12h.01M16.4 15.5h.01"/></svg>
-            </div>
-            <h3 data-i18n="s1.t">Ýaşaýyş jaýlary</h3>
-            <p data-i18n="s1.d">Köp gatly ýaşaýyş jaýlary, kotejler we ýaşaýyş toplumlary — taslamadan bezege çenli.</p>
+            <div class="s-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M6 21V4.5h7V21M16 21V9.5h4.5V21M8.5 8h2M8.5 11.5h2M8.5 15h2M18 12.5h.01M18 16h.01"/></svg></div>
+            <h3 data-ru="Гражданское строительство">Civil &amp; commercial construction</h3>
+            <p data-ru="Административно-торговые здания, жилые дома, магазины и социальные объекты.">Administrative-commercial buildings, housing, stores and social facilities.</p>
+            <a class="more" href="services.html#construction" data-ru="Подробнее">Learn more <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </article>
           <article class="s-card reveal">
-            <div class="s-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M6 21V4.5h6.5V21M15.5 21V9.5H20V21M8.5 8h1.5M8.5 11.5h1.5M8.5 15h1.5M17.2 12.5h.01M17.2 16h.01"/></svg>
-            </div>
-            <h3 data-i18n="s2.t">Söwda we ofis binalary</h3>
-            <p data-i18n="s2.d">Söwda merkezleri, ofis binalary, myhmanhanalar we restoranlar üçin döwrebap çözgütler.</p>
+            <div class="s-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2.5L5 13.5h5L11 21.5l8-11h-5z"/></svg></div>
+            <h3 data-ru="Электроэнергетика">Power infrastructure</h3>
+            <p data-ru="Подстанции 35/10 кВ и 110/35/10 кВ, ЛЭП, трансформаторные пункты 10/0,4 кВ.">35/10 kV and 110/35/10 kV substations, power lines, 10/0.4 kV transformer points.</p>
+            <a class="more" href="services.html#power" data-ru="Подробнее">Learn more <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </article>
           <article class="s-card reveal">
-            <div class="s-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M4 21v-8.5l5 3v-3l5 3v-3l6 3.5V21M17 8.5V3.5h3v7"/></svg>
-            </div>
-            <h3 data-i18n="s3.t">Senagat desgalary</h3>
-            <p data-i18n="s3.d">Zawodlar, ammarlar, önümçilik sehleri we logistika toplumlary üçin ygtybarly gurluşyk.</p>
+            <div class="s-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a6.5 6.5 0 0 0 6.5-6.5C18.5 10 12 2.5 12 2.5S5.5 10 5.5 14.5A6.5 6.5 0 0 0 12 21zM9 14.5a3 3 0 0 0 3 3"/></svg></div>
+            <h3 data-ru="Водоснабжение">Water supply systems</h3>
+            <p data-ru="Магистральные водоводы, насосные станции, резервуары до 3 400 м³, сети сёл и городов.">Water mains, pumping stations, reservoirs up to 3,400 m³, village and city networks.</p>
+            <a class="more" href="services.html#water" data-ru="Подробнее">Learn more <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </article>
           <article class="s-card reveal">
-            <div class="s-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.5h11.5a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5.5a1 1 0 0 1 1-1zM16.5 5.5H20a1 1 0 0 1 1 1v1M11 9v3.5M11 12.5H9.5V20h3v-4"/></svg>
-            </div>
-            <h3 data-i18n="s4.t">Abatlaýyş we rekonstruksiýa</h3>
-            <p data-i18n="s4.d">Binalaryň durkuny täzelemek, içki bezeg we tehniki taýdan döwrebaplaşdyrmak.</p>
+            <div class="s-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M4 21v-9l5 3v-3l5 3v-3l6 3.5V21M17 9V3.5h3V11"/></svg></div>
+            <h3 data-ru="Промышленные объекты">Industrial facilities</h3>
+            <p data-ru="Заводы и фабрики под ключ: пищевое производство, текстиль, склады и цеха.">Turnkey plants and factories: food production, textiles, warehouses and workshops.</p>
+            <a class="more" href="services.html#industrial" data-ru="Подробнее">Learn more <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </article>
           <article class="s-card reveal">
-            <div class="s-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4.6" r="1.6"/><path d="M12 6.2v2M11.3 8.2L5.5 20.5M12.7 8.2l5.8 12.3M8.3 14.7h7.4M4 20.5h3M17 20.5h3"/></svg>
-            </div>
-            <h3 data-i18n="s5.t">Taslama we inženerçilik</h3>
-            <p data-i18n="s5.d">Arhitektura taslamalary, inžener ulgamlary, smeta we tehniki gözegçilik hyzmatlary.</p>
+            <div class="s-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 20L9 4h6l4.5 16M12 6.5v2.5M12 12v2.5M12 17.5V20M2.5 20h19"/></svg></div>
+            <h3 data-ru="Дороги и связь">Roads &amp; telecom</h3>
+            <p data-ru="Автодороги первой категории, телефонные станции и инженерные сети.">First-degree highways, automatic telephone stations and utility networks.</p>
+            <a class="more" href="services.html#roads" data-ru="Подробнее">Learn more <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </article>
           <article class="s-card reveal">
-            <div class="s-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 20L9 4h6l4.5 16M12 6.5v2.5M12 12v2.5M12 17.5V20M2.5 20h19"/></svg>
-            </div>
-            <h3 data-i18n="s6.t">Infrastruktura</h3>
-            <p data-i18n="s6.d">Ýollar, meýdançalar, suw-lagym we elektrik ulgamlary — daşky infrastrukturanyň gurluşygy.</p>
+            <div class="s-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5L12 3l8.5 4.5v9L12 21l-8.5-4.5zM12 12l8.5-4.5M12 12L3.5 7.5M12 12v9"/></svg></div>
+            <h3 data-ru="Поставки и торговля">Supply &amp; trade</h3>
+            <p data-ru="Оптовые поставки химической продукции, нефтепродуктов, техники и оборудования.">Wholesale supply of chemical products, oil products, vehicles and equipment.</p>
+            <a class="more" href="services.html#supply" data-ru="Подробнее">Learn more <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ PROCESS ============ -->
-    <section id="process" class="section">
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section class="section">
       <div class="container">
         <div class="section-head">
-          <p class="kicker reveal" data-i18n="process.kicker">Iş prosesi</p>
-          <h2 class="h2 reveal" data-i18n="process.title">Pikirden açara çenli</h2>
+          <p class="kicker reveal" data-ru="Портфолио">Portfolio</p>
+          <h2 class="h2 reveal" data-ru="Избранные проекты">Featured projects</h2>
+          <p class="lead reveal" data-ru="27 объектов сдано государственной комиссии — от цифровых центров до магистральных сетей.">
+            27 facilities delivered to the state commission — from digital centers to main utility networks.
+          </p>
         </div>
-        <ol class="steps stagger">
-          <li class="step reveal">
-            <span class="step-num">01</span>
-            <h3 data-i18n="st1.t">Maslahat we seljerme</h3>
-            <p data-i18n="st1.d">Islegleriňizi diňleýäris, ýeri öwrenýäris we deslapky hasaplamany taýýarlaýarys.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step-num">02</span>
-            <h3 data-i18n="st2.t">Taslama we meýilnama</h3>
-            <p data-i18n="st2.d">Arhitektura taslamasyny, býujeti we iş tertibini siziň bilen ylalaşýarys.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step-num">03</span>
-            <h3 data-i18n="st3.t">Gurluşyk işleri</h3>
-            <p data-i18n="st3.d">Her tapgyrda hil gözegçiligini geçirip, işleriň barşy barada yzygiderli hasabat berýäris.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step-num">04</span>
-            <h3 data-i18n="st4.t">Tabşyrmak we kepillik</h3>
-            <p data-i18n="st4.d">Desgany resminamalary bilen tabşyrýarys we kepillik hyzmatyny dowam etdirýäris.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ============ PROJECTS ============ -->
-    <section id="projects" class="section section-soft">
-      <div class="container">
-        <div class="section-head">
-          <p class="kicker reveal" data-i18n="projects.kicker">Taslamalarymyz</p>
-          <h2 class="h2 reveal" data-i18n="projects.title">Ýerine ýetiren taslamalarymyz</h2>
-          <p class="lead reveal" data-i18n="projects.sub">Soňky ýyllarda tamamlanan işlerimiziň käbiri.</p>
+        <div class="projects-grid stagger">
+          <article class="p-card reveal">
+            <div class="p-media">
+              <img src="assets/img/digital-center.jpg" alt="Digital Systems Center in Ashgabat" loading="lazy">
+              <span class="pill"><span>2020</span></span>
+            </div>
+            <div class="p-body">
+              <div class="chips"><span class="chip" data-ru="Здания">Buildings</span><span class="chip" data-ru="Ашхабад">Ashgabat</span></div>
+              <h3 data-ru="«Центр цифровых систем» для Агентства кибербезопасности">“Digital Systems Center” for the State Cybersecurity Agency</h3>
+              <p class="p-meta"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span data-ru="ул. Ю. Эмре, Ашхабад • 06.2020 – 12.2020">Y. Emre Street, Ashgabat • 06.2020 – 12.2020</span></p>
+            </div>
+          </article>
+          <article class="p-card reveal">
+            <div class="p-media">
+              <img src="assets/img/hazyna-building.jpg" alt="Administrative-commercial building of Hazyna Gurluşyk" loading="lazy">
+              <span class="pill"><span>2017</span></span>
+            </div>
+            <div class="p-body">
+              <div class="chips"><span class="chip" data-ru="Здания">Buildings</span><span class="chip" data-ru="Ашхабад">Ashgabat</span></div>
+              <h3 data-ru="Административно-торговый комплекс на ул. Г. Кулиева">Administrative-commercial complex on G. Kuliyev Street</h3>
+              <p class="p-meta"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span data-ru="Ашхабад • 02.2016 – 06.2017">Ashgabat • 02.2016 – 06.2017</span></p>
+            </div>
+          </article>
+          <article class="p-card reveal">
+            <div class="p-media">
+              <img src="assets/img/substation-transformer.jpg" alt="35/10 kV electrical substation" loading="lazy">
+              <span class="pill"><span>2013</span></span>
+            </div>
+            <div class="p-body">
+              <div class="chips"><span class="chip" data-ru="Энергетика">Power</span><span class="chip" data-ru="Ахал">Ahal</span></div>
+              <h3 data-ru="Электрические подстанции 35/10 кВ в Гёкдепе">35/10 kV electrical substations in Gokdepe district</h3>
+              <p class="p-meta"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span data-ru="Ахалский велаят • 03.2013 – 09.2013">Ahal velayat • 03.2013 – 09.2013</span></p>
+            </div>
+          </article>
         </div>
-
-        <div class="filters reveal" role="group" aria-label="Taslamalary süzmek">
-          <button class="filter-btn is-active" data-filter="all" type="button" data-i18n="f.all">Hemmesi</button>
-          <button class="filter-btn" data-filter="res" type="button" data-i18n="f.res">Ýaşaýyş</button>
-          <button class="filter-btn" data-filter="com" type="button" data-i18n="f.com">Söwda</button>
-          <button class="filter-btn" data-filter="ind" type="button" data-i18n="f.ind">Senagat</button>
-        </div>
-
-        <div class="projects-grid stagger" id="projectsGrid">
-          <!-- 1. Residential complex -->
-          <article class="p-card reveal" data-cat="res">
-            <div class="p-media pm-a">
-              <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-                <defs><pattern id="pw1" width="16" height="20" patternUnits="userSpaceOnUse"><rect x="4" y="5" width="6" height="9" fill="rgba(233,201,102,0.28)"/></pattern></defs>
-                <g fill="#16233c" opacity="0.6">
-                  <rect x="18" y="90" width="52" height="160"/><rect x="330" y="110" width="56" height="140"/><rect x="252" y="128" width="46" height="122"/>
-                </g>
-                <rect x="86" y="60" width="70" height="190" fill="#0b1322"/><rect x="86" y="60" width="70" height="190" fill="url(#pw1)"/>
-                <rect x="170" y="98" width="62" height="152" fill="#0b1322"/><rect x="170" y="98" width="62" height="152" fill="url(#pw1)"/>
-                <rect x="246" y="74" width="66" height="176" fill="#0b1322"/><rect x="246" y="74" width="66" height="176" fill="url(#pw1)"/>
-                <path d="M121 60v-16M279 74v-14" stroke="#0b1322" stroke-width="3"/>
-                <circle cx="121" cy="40" r="2.4" fill="#E9C966"/>
-                <rect x="0" y="244" width="400" height="6" fill="#0b1322"/>
-              </svg>
-            </div>
-            <div class="p-body">
-              <span class="chip" data-i18n="f.res">Ýaşaýyş</span>
-              <h3 data-i18n="pr1.t">«Bagtyýarlyk» ýaşaýyş toplumy</h3>
-              <p class="p-meta" data-i18n="pr1.m">Aşgabat • 2024</p>
-              <p class="p-desc" data-i18n="pr1.d">12 gatly, 240 öýli döwrebap ýaşaýyş toplumy, ýerzemin awtoduralgasy bilen.</p>
-            </div>
-          </article>
-
-          <!-- 2. Mall -->
-          <article class="p-card reveal" data-cat="com">
-            <div class="p-media pm-b">
-              <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-                <defs><pattern id="pw2" width="22" height="26" patternUnits="userSpaceOnUse"><rect x="5" y="7" width="12" height="12" fill="rgba(233,201,102,0.22)"/></pattern></defs>
-                <g fill="#16233c" opacity="0.6"><rect x="20" y="120" width="44" height="130"/><rect x="344" y="104" width="42" height="146"/></g>
-                <rect x="70" y="150" width="260" height="100" fill="#0b1322"/>
-                <rect x="70" y="150" width="260" height="100" fill="url(#pw2)"/>
-                <rect x="150" y="118" width="100" height="132" fill="#0b1322"/>
-                <rect x="162" y="130" width="76" height="12" fill="rgba(233,201,102,0.5)"/>
-                <path d="M186 250v-52h28v52" fill="#1b2c4c"/>
-                <rect x="60" y="144" width="280" height="7" fill="#101c33"/>
-                <rect x="0" y="244" width="400" height="6" fill="#0b1322"/>
-              </svg>
-            </div>
-            <div class="p-body">
-              <span class="chip" data-i18n="f.com">Söwda</span>
-              <h3 data-i18n="pr2.t">«Merjen» söwda merkezi</h3>
-              <p class="p-meta" data-i18n="pr2.m">Mary • 2023</p>
-              <p class="p-desc" data-i18n="pr2.d">15 000 m² söwda meýdanly, 3 gatly söwda-dynç alyş merkezi.</p>
-            </div>
-          </article>
-
-          <!-- 3. Factory -->
-          <article class="p-card reveal" data-cat="ind">
-            <div class="p-media pm-c">
-              <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-                <defs><pattern id="pw3" width="26" height="30" patternUnits="userSpaceOnUse"><rect x="6" y="8" width="14" height="10" fill="rgba(233,201,102,0.2)"/></pattern></defs>
-                <g fill="#16233c" opacity="0.6"><rect x="330" y="130" width="60" height="120"/><circle cx="46" cy="216" r="26"/><circle cx="92" cy="216" r="26"/><rect x="20" y="216" width="98" height="34"/></g>
-                <path d="M140 250v-92l44 24v-24l44 24v-24l48 26v66z" fill="#0b1322"/>
-                <rect x="140" y="196" width="180" height="54" fill="url(#pw3)"/>
-                <rect x="292" y="96" width="20" height="154" fill="#0b1322"/>
-                <rect x="292" y="96" width="20" height="8" fill="rgba(233,201,102,0.45)"/>
-                <rect x="0" y="244" width="400" height="6" fill="#0b1322"/>
-              </svg>
-            </div>
-            <div class="p-body">
-              <span class="chip" data-i18n="f.ind">Senagat</span>
-              <h3 data-i18n="pr3.t">Dokma fabrigi</h3>
-              <p class="p-meta" data-i18n="pr3.m">Türkmenabat • 2023</p>
-              <p class="p-desc" data-i18n="pr3.d">8 500 m² önümçilik meýdanly dokma fabriginiň täze sehi.</p>
-            </div>
-          </article>
-
-          <!-- 4. Cottage village -->
-          <article class="p-card reveal" data-cat="res">
-            <div class="p-media pm-d">
-              <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-                <g fill="#16233c" opacity="0.55"><rect x="10" y="140" width="60" height="110"/><rect x="336" y="150" width="54" height="100"/></g>
-                <g>
-                  <path d="M84 250v-64l38-26 38 26v64z" fill="#0b1322"/>
-                  <rect x="106" y="206" width="14" height="18" fill="rgba(233,201,102,0.3)"/>
-                  <rect x="130" y="206" width="14" height="18" fill="rgba(233,201,102,0.3)"/>
-                  <path d="M178 250v-58l34-24 34 24v58z" fill="#101d36"/>
-                  <rect x="198" y="210" width="13" height="16" fill="rgba(233,201,102,0.3)"/>
-                  <path d="M262 250v-64l38-26 38 26v64z" fill="#0b1322"/>
-                  <rect x="284" y="206" width="14" height="18" fill="rgba(233,201,102,0.3)"/>
-                  <rect x="308" y="206" width="14" height="18" fill="rgba(233,201,102,0.3)"/>
-                </g>
-                <rect x="0" y="244" width="400" height="6" fill="#0b1322"/>
-              </svg>
-            </div>
-            <div class="p-body">
-              <span class="chip" data-i18n="f.res">Ýaşaýyş</span>
-              <h3 data-i18n="pr4.t">«Nurana» kotejler şäherçesi</h3>
-              <p class="p-meta" data-i18n="pr4.m">Arkadag • 2025</p>
-              <p class="p-desc" data-i18n="pr4.d">48 sany iki gatly kotejden ybarat ýaşaýyş şäherçesi.</p>
-            </div>
-          </article>
-
-          <!-- 5. Business center -->
-          <article class="p-card reveal" data-cat="com">
-            <div class="p-media pm-e">
-              <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-                <defs><pattern id="pw5" width="14" height="16" patternUnits="userSpaceOnUse"><rect x="3" y="4" width="8" height="8" fill="rgba(233,201,102,0.24)"/></pattern></defs>
-                <g fill="#16233c" opacity="0.6"><rect x="34" y="110" width="58" height="140"/><rect x="318" y="126" width="52" height="124"/></g>
-                <rect x="150" y="46" width="100" height="204" fill="#0b1322"/>
-                <rect x="150" y="46" width="100" height="204" fill="url(#pw5)"/>
-                <rect x="118" y="188" width="164" height="62" fill="#0b1322"/>
-                <rect x="118" y="188" width="164" height="8" fill="#101c33"/>
-                <path d="M200 46v-22" stroke="#0b1322" stroke-width="3.5"/>
-                <circle cx="200" cy="20" r="2.6" fill="#E9C966"/>
-                <rect x="0" y="244" width="400" height="6" fill="#0b1322"/>
-              </svg>
-            </div>
-            <div class="p-body">
-              <span class="chip" data-i18n="f.com">Söwda</span>
-              <h3 data-i18n="pr5.t">«Altyn» biznes merkezi</h3>
-              <p class="p-meta" data-i18n="pr5.m">Aşgabat • 2022</p>
-              <p class="p-desc" data-i18n="pr5.d">9 gatly A-klas ofis binasy, panoramaly aýna fasad bilen.</p>
-            </div>
-          </article>
-
-          <!-- 6. Logistics terminal -->
-          <article class="p-card reveal" data-cat="ind">
-            <div class="p-media pm-f">
-              <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-                <g fill="#16233c" opacity="0.55"><rect x="330" y="140" width="58" height="110"/></g>
-                <path d="M60 250v-72a12 12 0 0 1 12-12h196a12 12 0 0 1 12 12v72z" fill="#0b1322"/>
-                <rect x="84" y="200" width="44" height="50" fill="rgba(233,201,102,0.22)"/>
-                <rect x="148" y="200" width="44" height="50" fill="rgba(233,201,102,0.22)"/>
-                <rect x="212" y="200" width="44" height="50" fill="rgba(233,201,102,0.22)"/>
-                <rect x="300" y="214" width="34" height="16" fill="#101d36"/>
-                <rect x="300" y="232" width="34" height="16" fill="#0b1322"/>
-                <rect x="338" y="232" width="34" height="16" fill="#101d36"/>
-                <path d="M30 120h84M72 120v-18" stroke="#0b1322" stroke-width="5"/>
-                <path d="M104 120v34" stroke="#0b1322" stroke-width="2.5"/>
-                <path d="M99 154h10v7h-10z" fill="#0b1322"/>
-                <rect x="0" y="244" width="400" height="6" fill="#0b1322"/>
-              </svg>
-            </div>
-            <div class="p-body">
-              <span class="chip" data-i18n="f.ind">Senagat</span>
-              <h3 data-i18n="pr6.t">Logistika terminaly</h3>
-              <p class="p-meta" data-i18n="pr6.m">Balkanabat • 2024</p>
-              <p class="p-desc" data-i18n="pr6.d">Sowadyjy ammarly we demir ýol şahaly logistika terminaly.</p>
-            </div>
-          </article>
+        <div style="text-align: center; margin-top: 40px;" class="reveal">
+          <a href="projects.html" class="btn btn-outline btn-lg" data-ru="Все 27 проектов">See all 27 projects
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
     </section>
 
-    <!-- ============ WHY US ============ -->
-    <section id="why" class="section section-dark">
-      <div class="container">
+    <!-- ============ REGIONS ============ -->
+    <section class="band">
+      <div class="hero-sky" aria-hidden="true"></div>
+      <div class="container band-in">
         <div class="section-head">
-          <p class="kicker kicker-gold reveal" data-i18n="why.kicker">Näme üçin biz?</p>
-          <h2 class="h2 reveal" data-i18n="why.title">Näme üçin «Hazyna Gurluşyk»?</h2>
+          <p class="kicker reveal" data-ru="География">Geography</p>
+          <h2 class="h2 reveal" data-ru="Проекты по всей стране">Projects across the country</h2>
+          <p class="lead reveal" data-ru="Мы работаем там, где нужны надёжные сети и здания — от столицы до велаятов.">
+            We work wherever reliable networks and buildings are needed — from the capital to the velayats.
+          </p>
         </div>
-        <div class="why-grid stagger">
-          <div class="why-card reveal">
-            <div class="why-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.2 2"/></svg>
-            </div>
-            <h3 data-i18n="w1.t">Öz wagtynda tabşyrmak</h3>
-            <p data-i18n="w1.d">Şertnamada bellenen möhlet biziň üçin kanun. Gijikdirme — biziň sözlügimizde ýok.</p>
+        <div class="regions stagger">
+          <div class="region-card reveal" style="--w: 21%;">
+            <div class="region-num">4</div>
+            <div class="region-name" data-ru="г. Ашхабад">Ashgabat city</div>
+            <div class="region-bar"><i></i></div>
           </div>
-          <div class="why-card reveal">
-            <div class="why-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12S6.5 5.5 12 5.5 21.5 12 21.5 12 17.5 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/></svg>
-            </div>
-            <h3 data-i18n="w2.t">Aç-açan hyzmatdaşlyk</h3>
-            <p data-i18n="w2.d">Açyk býujet, yzygiderli hasabat we islendik pursatda gurluşyk meýdançasyna baryp görmek mümkinçiligi.</p>
+          <div class="region-card reveal" style="--w: 100%;">
+            <div class="region-num">19</div>
+            <div class="region-name" data-ru="Ахалский велаят">Ahal velayat</div>
+            <div class="region-bar"><i></i></div>
           </div>
-          <div class="why-card reveal">
-            <div class="why-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.6c0 4.3-3.1 7-7.5 9.4-4.4-2.4-7.5-5.1-7.5-9.4V6z"/><path d="M8.8 12l2.2 2.2 4.2-4.4"/></svg>
-            </div>
-            <h3 data-i18n="w3.t">Hil kepilligi</h3>
-            <p data-i18n="w3.d">Diňe barlagdan geçen materiallar we ähli ýerine ýetirilen işlere resmi kepillik.</p>
+          <div class="region-card reveal" style="--w: 16%;">
+            <div class="region-num">3</div>
+            <div class="region-name" data-ru="Балканский велаят">Balkan velayat</div>
+            <div class="region-bar"><i></i></div>
           </div>
-          <div class="why-card reveal">
-            <div class="why-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2.5L5 13.5h5L11 21.5l8-11h-5z"/></svg>
-            </div>
-            <h3 data-i18n="w4.t">Döwrebap tehnologiýalar</h3>
-            <p data-i18n="w4.d">Häzirki zaman enjamlary, energiýa tygşytlaýjy çözgütler we öňdebaryjy gurluşyk usullary.</p>
+          <div class="region-card reveal" style="--w: 8%;">
+            <div class="region-num">1</div>
+            <div class="region-name" data-ru="Лебапский велаят">Lebap velayat</div>
+            <div class="region-bar"><i></i></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ PARTNER / QUOTE ============ -->
+    <section class="section">
+      <div class="container split">
+        <div class="reveal">
+          <p class="kicker" data-ru="Партнёрство">Partnership</p>
+          <h2 class="h2" data-ru="Признанная репутация">A recognized reputation</h2>
+          <p class="text" style="margin-top: 14px;"
+             data-ru="За годы работы компания зарекомендовала себя как профессиональная корпорация: жилые комплексы, коммерческие здания, промышленные объекты. Архитекторы, инженеры, планировщики и техники работают как единая команда.">
+            For years, our company has built a reputation as a professional corporation — residential complexes,
+            commercial buildings and industrial facilities. Our architects, engineers, planners and technicians
+            collaborate seamlessly on every project.
+          </p>
+          <div class="partner reveal" style="margin-top: 26px;">
+            <div class="partner-badge">SINOPEC</div>
+            <p style="font-size: 0.97rem;"
+               data-ru="Тесное сотрудничество с «Sinopec» — ведущей международной компанией нефтегазовой отрасли — даёт нам ценный опыт для участия в глобальном рынке.">
+              Our close collaboration with <strong>Sinopec</strong>, a leading international oil and gas company,
+              provides us valuable experience for participation in the global market.
+            </p>
+          </div>
+        </div>
+        <blockquote class="quote reveal"
+            data-ru="Работая с вами, мы опираемся на многолетний опыт и применяем самые современные технологии, чтобы решать ключевые задачи вашего предприятия и достигать поставленных целей.">
+          Partnering with you, we draw upon our extensive experience and insights to design and deliver
+          solutions that employ state-of-the-art technologies — to tackle your enterprise’s most pressing
+          needs and accomplish your goals.
+        </blockquote>
       </div>
     </section>
 
     <!-- ============ CTA ============ -->
-    <section class="cta">
+    <section class="band">
+      <div class="hero-sky" aria-hidden="true"></div>
       <div class="container cta-in">
-        <div class="cta-copy reveal">
-          <p class="cta-kicker" data-i18n="cta.kicker">Taslamaňyz barmy?</p>
-          <h2 class="cta-title" data-i18n="cta.title">Geliň, ony bilelikde durmuşa geçireliň.</h2>
+        <div class="reveal">
+          <h2 class="cta-title" data-ru="Есть проект? Давайте построим его вместе.">Have a project in mind? Let’s build it together.</h2>
+          <p class="cta-note" data-ru="Ответим в течение одного рабочего дня.">We reply within one business day.</p>
         </div>
-        <a href="#contact" class="btn btn-dark btn-lg reveal" data-i18n="cta.btn">Mugt maslahat almak</a>
-      </div>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-head">
-          <p class="kicker reveal" data-i18n="contact.kicker">Habarlaşmak</p>
-          <h2 class="h2 reveal" data-i18n="contact.title">Biz bilen habarlaşyň</h2>
-          <p class="lead reveal" data-i18n="contact.sub">Formany dolduryň ýa-da göni jaň ediň — bir iş gününiň dowamynda jogap bereris.</p>
-        </div>
-
-        <div class="contact-grid">
-          <div class="c-info stagger">
-            <div class="c-item reveal">
-              <div class="c-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></div>
-              <div>
-                <p class="c-label" data-i18n="ci1.l">Salgy</p>
-                <p class="c-value" data-i18n="ci1.v">Aşgabat ş., Arçabil şaýoly 17</p>
-              </div>
-            </div>
-            <div class="c-item reveal">
-              <div class="c-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div>
-              <div>
-                <p class="c-label" data-i18n="ci2.l">Telefon</p>
-                <p class="c-value"><a href="tel:+99312456789">+993 12 45-67-89</a><br><a href="tel:+99365123456">+993 65 12-34-56</a></p>
-              </div>
-            </div>
-            <div class="c-item reveal">
-              <div class="c-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 5.5h17v13h-17z"/><path d="M4 6.5l8 6 8-6"/></svg></div>
-              <div>
-                <p class="c-label" data-i18n="ci3.l">E-poçta</p>
-                <p class="c-value"><a href="mailto:info@hazyna.com.tm">info@hazyna.com.tm</a></p>
-              </div>
-            </div>
-            <div class="c-item reveal">
-              <div class="c-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div>
-              <div>
-                <p class="c-label" data-i18n="ci4.l">Iş wagty</p>
-                <p class="c-value" data-i18n="ci4.v">Duşenbe – Şenbe: 09:00 – 18:00</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="c-form-wrap reveal">
-            <form class="c-form" id="quoteForm" novalidate>
-              <div class="form-row">
-                <div class="field">
-                  <label for="f-name" data-i18n="form.name">Adyňyz *</label>
-                  <input id="f-name" name="name" type="text" autocomplete="name" data-i18n-ph="ph.name" placeholder="Adyňyzy ýazyň">
-                  <small class="field-err" data-i18n="form.err" hidden>Bu meýdany dolduryň</small>
-                </div>
-                <div class="field">
-                  <label for="f-phone" data-i18n="form.phone">Telefon *</label>
-                  <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+993 __ ______">
-                  <small class="field-err" data-i18n="form.err" hidden>Bu meýdany dolduryň</small>
-                </div>
-              </div>
-              <div class="field">
-                <label for="f-service" data-i18n="form.service">Hyzmatyň görnüşi</label>
-                <div class="select-wrap">
-                  <select id="f-service" name="service">
-                    <option value="" data-i18n="form.opt0">Hyzmaty saýlaň</option>
-                    <option value="res" data-i18n="s1.t">Ýaşaýyş jaýlary</option>
-                    <option value="com" data-i18n="s2.t">Söwda we ofis binalary</option>
-                    <option value="ind" data-i18n="s3.t">Senagat desgalary</option>
-                    <option value="ren" data-i18n="s4.t">Abatlaýyş we rekonstruksiýa</option>
-                    <option value="eng" data-i18n="s5.t">Taslama we inženerçilik</option>
-                    <option value="inf" data-i18n="s6.t">Infrastruktura</option>
-                  </select>
-                </div>
-              </div>
-              <div class="field">
-                <label for="f-msg" data-i18n="form.message">Habaryňyz</label>
-                <textarea id="f-msg" name="message" rows="4" data-i18n-ph="ph.msg" placeholder="Taslamaňyz barada gysgaça ýazyň…"></textarea>
-              </div>
-              <div class="form-foot">
-                <button class="btn btn-gold btn-lg" type="submit" data-i18n="form.submit">Ugratmak</button>
-                <p class="form-note" data-i18n="form.note">* hökmany meýdanlar</p>
-              </div>
-            </form>
-
-            <div class="form-success" id="formSuccess" hidden>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>
-              <h3 data-i18n="form.okT">Sag boluň!</h3>
-              <p data-i18n="form.okD">Habaryňyz kabul edildi. Tiz wagtda siziň bilen habarlaşarys.</p>
-            </div>
-          </div>
-        </div>
+        <a href="contact.html" class="btn btn-white btn-lg reveal" data-ru="Связаться с нами">Get in touch
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </section>
   </main>
@@ -662,62 +358,52 @@
   <footer class="footer">
     <div class="container f-grid">
       <div class="f-brand">
-        <a class="brand" href="#home" aria-label="Hazyna Gurluşyk">
-          <svg class="brand-gem" viewBox="0 0 44 40" aria-hidden="true">
-            <polygon points="15,4 29,4 22,14" fill="#F0D27A"/>
-            <polygon points="6,14 15,4 22,14" fill="#DFB44A"/>
-            <polygon points="29,4 38,14 22,14" fill="#C79A29"/>
-            <polygon points="6,14 22,14 22,36" fill="#B08217"/>
-            <polygon points="22,14 38,14 22,36" fill="#D9AE3E"/>
-          </svg>
-          <span class="brand-text">
-            <b>HAZYNA</b>
-            <i>GURLUŞYK</i>
-          </span>
+        <a class="brand" href="index.html" aria-label="Hazyna Gurluşyk — Home">
+          <img class="brand-logo" src="assets/img/logo-tile.png" alt="Hazyna Gurluşyk logo">
+          <span class="brand-text"><b>HAZYNA GURLUŞYK</b><i data-ru="ХОЗЯЙСТВЕННОЕ ОБЩЕСТВО">ECONOMIC SOCIETY</i></span>
         </a>
-        <p class="f-blurb" data-i18n="footer.blurb">Berk binýat — ynamly geljek. Türkmenistanda gurluşygyň ähli tapgyrlary boýunça ygtybarly hyzmatdaşyňyz.</p>
-        <div class="socials">
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" class="fill"/></svg></a>
-          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="3.5"/><path d="M10.2 9.3l4.6 2.7-4.6 2.7z" class="fill"/></svg></a>
-          <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21 4L2.8 11.2l5.4 1.9L10 19.5l3.2-3.8 4.8 3.3z"/><path d="M8.2 13.1L21 4"/></svg></a>
-        </div>
+        <p class="f-blurb" data-ru="Строительство, энергетика и водоснабжение по всему Туркменистану с 2009 года.">
+          Construction, power and water-supply projects across Turkmenistan since 2009.
+        </p>
+        <span class="f-tagline" data-ru="Опыт времени">Experience of time</span>
       </div>
-
       <div class="f-col">
-        <p class="f-title" data-i18n="footer.pages">Sahypalar</p>
-        <a href="#home" data-i18n="nav.home">Baş sahypa</a>
-        <a href="#about" data-i18n="nav.about">Biz barada</a>
-        <a href="#services" data-i18n="nav.services">Hyzmatlar</a>
-        <a href="#projects" data-i18n="nav.projects">Taslamalar</a>
-        <a href="#contact" data-i18n="nav.contact">Habarlaşmak</a>
+        <p class="f-title" data-ru="Разделы">Pages</p>
+        <a href="index.html" data-ru="Главная">Home</a>
+        <a href="about.html" data-ru="О компании">About us</a>
+        <a href="services.html" data-ru="Услуги">Services</a>
+        <a href="projects.html" data-ru="Проекты">Projects</a>
+        <a href="contact.html" data-ru="Контакты">Contact</a>
       </div>
-
       <div class="f-col">
-        <p class="f-title" data-i18n="footer.servicesT">Hyzmatlar</p>
-        <a href="#services" data-i18n="s1.t">Ýaşaýyş jaýlary</a>
-        <a href="#services" data-i18n="s2.t">Söwda we ofis binalary</a>
-        <a href="#services" data-i18n="s3.t">Senagat desgalary</a>
-        <a href="#services" data-i18n="s4.t">Abatlaýyş we rekonstruksiýa</a>
-        <a href="#services" data-i18n="s5.t">Taslama we inženerçilik</a>
-        <a href="#services" data-i18n="s6.t">Infrastruktura</a>
+        <p class="f-title" data-ru="Направления">Services</p>
+        <a href="services.html#construction" data-ru="Гражданское строительство">Civil construction</a>
+        <a href="services.html#power" data-ru="Электроэнергетика">Power infrastructure</a>
+        <a href="services.html#water" data-ru="Водоснабжение">Water supply</a>
+        <a href="services.html#industrial" data-ru="Промышленные объекты">Industrial facilities</a>
+        <a href="services.html#roads" data-ru="Дороги и связь">Roads &amp; telecom</a>
+        <a href="services.html#supply" data-ru="Поставки и торговля">Supply &amp; trade</a>
       </div>
-
       <div class="f-col">
-        <p class="f-title" data-i18n="footer.contactT">Habarlaşmak</p>
-        <p class="f-line" data-i18n="top.addr">Aşgabat ş., Arçabil şaýoly 17</p>
-        <a href="tel:+99312456789">+993 12 45-67-89</a>
-        <a href="mailto:info@hazyna.com.tm">info@hazyna.com.tm</a>
-        <p class="f-line" data-i18n="ci4.v">Duşenbe – Şenbe: 09:00 – 18:00</p>
+        <p class="f-title" data-ru="Контакты">Contact</p>
+        <p class="f-line"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <span data-ru="ул. 1972 (Ататюрка), 82, Копетдагский этрап, г. Ашхабад">82, 1972 (Ataturk) street, Kopetdag district, Ashgabat</span></p>
+        <a class="f-line" href="tel:+99312468866"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+          <span>+993 12 46-88-66</span></a>
+        <p class="f-line"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3.5h12V9M6 14.5H4.5V9h15v5.5H18M6 12.5h12V20.5H6z"/></svg>
+          <span>+993 12 46-88-11 <small data-ru="(факс)">(fax)</small></span></p>
+        <a class="f-line" href="mailto:hazynagurlusykhk@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 5.5h17v13h-17z"/><path d="M4 6.5l8 6 8-6"/></svg>
+          <span>hazynagurlusykhk@gmail.com</span></a>
       </div>
     </div>
     <div class="f-bottom">
-      <div class="container">
-        <p data-i18n="footer.rights">© 2026 «Hazyna Gurluşyk». Ähli hukuklar goralandyr.</p>
+      <div class="container f-bottom-in">
+        <p data-ru="© 2026 ХО «Хазына Гурлушык». Все права защищены.">© 2026 Hazyna Gurluşyk Economic Society. All rights reserved.</p>
+        <p data-ru="Ашхабад, Туркменистан">Ashgabat, Turkmenistan</p>
       </div>
     </div>
   </footer>
 
-  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

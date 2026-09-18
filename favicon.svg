@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
-  <rect width="44" height="44" rx="9" fill="#0a1120"/>
-  <polygon points="15,7 29,7 22,18" fill="#F0D27A"/>
-  <polygon points="6,18 15,7 22,18" fill="#DFB44A"/>
-  <polygon points="29,7 38,18 22,18" fill="#C79A29"/>
-  <polygon points="6,18 22,18 22,38" fill="#B08217"/>
-  <polygon points="22,18 38,18 22,38" fill="#D9AE3E"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <rect width="48" height="48" rx="10" fill="#1772CE"/>
+  <path d="M24 6.5L38.5 15v18L24 41.5 9.5 33V15z" fill="none" stroke="#FFFFFF" stroke-width="2.6"/>
+  <path d="M18.5 17v14M18.5 24h4.5" stroke="#3EA6FB" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M29.5 17.5h-5v13h5v-4.5M29.5 22.5h-2.4" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </svg>
