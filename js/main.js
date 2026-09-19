@@ -10,30 +10,36 @@
   var LANG_KEY = "hg-lang";
   var current = "en";
 
+  function pick(ru, tm, en) {
+    if (current === "ru" && ru != null) return ru;
+    if (current === "tm" && tm != null) return tm;
+    return en;
+  }
+
   function applyLang(lang) {
-    current = lang === "ru" ? "ru" : "en";
+    current = (lang === "ru" || lang === "tm") ? lang : "en";
 
     document.querySelectorAll("[data-ru]").forEach(function (el) {
       if (el.dataset.enHtml === undefined) el.dataset.enHtml = el.innerHTML;
-      el.innerHTML = current === "ru" ? el.dataset.ru : el.dataset.enHtml;
+      el.innerHTML = pick(el.dataset.ru, el.dataset.tm, el.dataset.enHtml);
     });
     document.querySelectorAll("[data-ru-ph]").forEach(function (el) {
       if (el.dataset.enPh === undefined) el.dataset.enPh = el.getAttribute("placeholder") || "";
-      el.setAttribute("placeholder", current === "ru" ? el.dataset.ruPh : el.dataset.enPh);
+      el.setAttribute("placeholder", pick(el.dataset.ruPh, el.dataset.tmPh, el.dataset.enPh));
     });
 
     var titleEl = document.querySelector("title");
     if (titleEl && titleEl.dataset.ru) {
       if (titleEl.dataset.en === undefined) titleEl.dataset.en = titleEl.textContent;
-      document.title = current === "ru" ? titleEl.dataset.ru : titleEl.dataset.en;
+      document.title = pick(titleEl.dataset.ru, titleEl.dataset.tm, titleEl.dataset.en);
     }
     var meta = document.querySelector('meta[name="description"]');
     if (meta && meta.dataset.ru) {
       if (meta.dataset.en === undefined) meta.dataset.en = meta.getAttribute("content");
-      meta.setAttribute("content", current === "ru" ? meta.dataset.ru : meta.dataset.en);
+      meta.setAttribute("content", pick(meta.dataset.ru, meta.dataset.tm, meta.dataset.en));
     }
 
-    document.documentElement.lang = current;
+    document.documentElement.lang = current === "tm" ? "tk" : current;
     document.querySelectorAll(".lang-btn").forEach(function (b) {
       b.classList.toggle("is-active", b.dataset.lang === current);
     });
@@ -50,7 +56,7 @@
 
   var saved = null;
   try { saved = localStorage.getItem(LANG_KEY); } catch (e) { /* ignore */ }
-  if (saved === "ru") applyLang("ru");
+  if (saved === "ru" || saved === "tm") applyLang(saved);
 
   /* ---------- Header ---------- */
   var header = document.getElementById("header");
@@ -93,7 +99,7 @@
 
   /* ---------- Counters ---------- */
   function formatNum(n) {
-    return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, current === "ru" ? " " : ",");
+    return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, current === "en" ? "," : " ");
   }
   function animateCounter(el) {
     var target = parseInt(el.dataset.count, 10) || 0;
